@@ -1,30 +1,29 @@
 ﻿using UnityEngine;
- 
- public class Music : MonoBehaviour
- {
-     private AudioSource _audioSource;
 
-     private void Awake()
-     {
-         DontDestroyOnLoad(transform.gameObject);
-         _audioSource = GetComponent<AudioSource>();
-     }
+public class Music : MonoBehaviour
+{
+    private AudioSource _audioSource;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+      DontDestroyOnLoad(transform.gameObject);
+      _audioSource = GetComponent<AudioSource>();
+    }
+
     void Start()
     {
-        // FIXME: NPE here
-        this.GetComponent<AudioSource>().volume = GameManager.instance.GetVolume();
+      // FIXME: NPE here
+      this.GetComponent<AudioSource>().volume = GameManager.instance.GetVolume();
     }
- 
-     public void PlayMusic()
-     {
-         if (_audioSource.isPlaying) return;
-         _audioSource.Play();
-     }
- 
-     public void StopMusic()
-     {
-         _audioSource.Stop();
-     }
- }
+
+    public void PlayMusic()
+    {
+      if (_audioSource.isPlaying) return;
+      _audioSource.Play();
+    }
+
+    public void StopMusic()
+    {
+      _audioSource.Stop();
+    }
+}

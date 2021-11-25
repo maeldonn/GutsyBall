@@ -9,14 +9,14 @@ public class FixedCamera : MonoBehaviour
 
     void Start()
     {
-        this._offset = new Vector3(0, 2, -3);    //just put the values that you want instead of y and z
+        this._offset = new Vector3(0, 2, -3);
     }
 
     void FixedUpdate()
     {
+        //stores the flat velocity of your player so it can put the camera always behind it
         Vector3 flatSpeed = player.GetComponent<Rigidbody>().velocity;
         flatSpeed.y = 0;
-        //stores the flat velocity of your player so it can put the camera always behind it
 
         Quaternion wantedRotation = new Quaternion(0, 0, 0, 0);
 

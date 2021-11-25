@@ -10,9 +10,10 @@
          _audioSource = GetComponent<AudioSource>();
      }
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    void Start()
     {
+        // FIXME: NPE here
         this.GetComponent<AudioSource>().volume = GameManager.instance.GetVolume();
     }
  

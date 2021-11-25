@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    private float difficulty = 0.01F;
-    private float volume = 1;
+    private float difficulty = 1f;
+    private float volume = 1f;
 
     private void Awake()
     {

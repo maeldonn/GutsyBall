@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 171334536}
   - component: {fileID: 171334535}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,6 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581f3574f72944583a91726eb52373ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
 --- !u!1 &342956241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,6 +3955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581f3574f72944583a91726eb52373ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
 --- !u!1 &1945859411
 GameObject:
   m_ObjectHideFlags: 0

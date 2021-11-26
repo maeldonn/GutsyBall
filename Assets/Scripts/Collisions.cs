@@ -12,9 +12,9 @@ public class Collisions : MonoBehaviour
         // Check for a loose
         if (collision.gameObject.name == "Lava")
         {
-            // TODO: Supress all the speed
             this.GetComponent<Transform>().position = new Vector3(10.12f, 2, -12.74f);
-            this.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            this.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            this.GetComponent<Rigidbody>().velocity = Vector3.zero;
         } 
 
         // Check for a win
